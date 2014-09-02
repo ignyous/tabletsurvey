@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Create a New Record</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/ui-utils-ieshiv.min.js"></script>
+<script src="/js/ui-utils.min.js"></script>
+<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse no-transition" role="navigation">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      </button>
+      <a class="navbar-brand" href="#">Main Menu</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      	
+        <ul class="nav navbar-nav navbar-left">
+        <li class="grey90"><a href="#">Welcome, User</a></li>
+        <li class="grey80"><a href="#">Records</a></li>
+        <li class="grey70"><a href="#"><span class="edit-icon"></span> Edit Existing</a></li>
+        <li class="grey60"><a href="#">Intitiate Interview Process</a></li>
+      </ul>        
+      </ul>
+      
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id="content">
+
+	<div class="container"> 
+
+        
+        <div class="row">
+        <div class="col-md-12">
+        
+        <div class="title-icon"><img src="images/plus.png"></div>
+        <div class="title-h1"><h1>Create a New Record</h1></div>
+        <div class="spacer"></div>   
+        
+        	 <form novalidate class="form-horizontal" role="form" autocomplete="off" name="NewRecordForm">
+  <div class="form-group">
+    <label for="firstName" class="col-sm-3 control-label">First Name *</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="firstName" placeholder="" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="middleName" class="col-sm-3 control-label">Middle Name</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="middleName" placeholder="">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="lastName" class="col-sm-3 control-label">Last Name *</label>
+    <div class="col-sm-9">
+      <input type="email" class="form-control" id="lastName" placeholder="" required>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <div class="col-sm-12">
+      <select class="form-select" id="siteCode" name="siteCode" required>
+          <option value="0">Site Code</option>
+          <option value="523">Boston</option>
+          <option value="518">Bedford</option>
+          <option value="556">Lovell</option>
+          <option value="537">Jesse Brown</option>
+          <option value="578">Hines</option>
+          <option value="580">Houston</option>
+          <option value="640">Palo Alto</option>
+          <option value="660">Salt Lake City</option>
+        </select>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <div class="col-sm-12">
+      <select class="form-select" id="sampleCode" name="sampleCode" required>
+          <option value="0">Sample</option>
+          <option value="1">HCRV - Prison Outreach</option>
+          <option value="2">VJO - Jail Outreach Only - No Treatment Court</option>
+          <option value="3">VJO - Treatment Court Outreach</option>
+        </select>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-9">
+      <p class="text-right">* Denotes Mandatory Field</p>
+    </div>
+  </div>
+  <div class="form-group text-right end">
+  <div class="col-sm-12">
+                 <button type="submit" class="btn btn-success btn-lg" 
+                   value="Login" title="Login">
+                   <span>CREATE RECORD</span>
+                 </button>
+             </div></div>
+</form>
+        </div>
+   		</div>
+        
+        
+    </div>
+
+</div>
+</body>
+</html>
